@@ -3,8 +3,9 @@ const STANDARD_COMPASS = 4000; //4000 ms for a compass for 60 bpm
 var compass = STANDARD_COMPASS;
 var waitTime = 0;*/
 var samplesPlaying = 0; //Numbor of samples playing at the same time
-var onPlay = []; //Samples already playing
+var activeGrid; //Grid with the music genre active right now;
 var itemOnPlay = []; //Items asociated to samples wich are playing 
+var onPlay = []; //Samples already playing
 //-----CHAPUCERO---------------
 /*---PARA CUANTIFICAR
 var controlAudio;
@@ -14,6 +15,15 @@ function activeBPM(control){
     controlAudio.load();
     setBPM(90);
 }*/
+function sOpnConfMenu(){
+    $('#confMenu').animate({
+        left: '0'
+    });
+}
+function selectGenre(genre, grid, item) {
+    grid.style.display = "none";
+    item.style.backgroundColor = "#FA2";
+}
 //-----PLAY/STOP SAMPLES-------
 function playSample(sample, item, row){
     if (sample.paused) {  

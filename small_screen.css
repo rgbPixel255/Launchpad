@@ -1,0 +1,19 @@
+.header-cont{
+    display: flex;
+    justify-content: space-between;
+}
+.s-menu-btn{
+	display: block;
+}
+.grid__container{
+    display: block;
+}
+.cont-configuration{
+	position: fixed;
+	max-width: 1000px;
+	width: 70%;
+	right: 100%;
+}
+.cont-launchpad{
+
+}
