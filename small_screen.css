@@ -1,19 +1,21 @@
-.header-cont{
+header{
     display: flex;
     justify-content: space-between;
 }
-.s-menu-btn{
+header .s-menu-btn{
 	display: block;
+	color: var(--main-font-color);
+    cursor: pointer;
 }
-.grid__container{
-    display: block;
+.hiddenElement{
+    position: fixed;
+    left: -100%;
+    transition: left 0.4s ease-out;
 }
-.cont-configuration{
-	position: fixed;
-	max-width: 1000px;
-	width: 70%;
-	right: 100%;
-}
-.cont-launchpad{
-
+.showedElement{
+    position: fixed;
+    width: 80%;
+    height: calc(100%-65px);
+    left: 0;
+    transition: left 0.4s ease-out;
 }

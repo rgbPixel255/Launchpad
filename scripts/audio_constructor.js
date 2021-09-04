@@ -1,0 +1,1 @@
+let column1_row0 = pad("column1_row0", document.getElementById("modernRapDrum_1"), "#A734A7", "#E3A8E3");

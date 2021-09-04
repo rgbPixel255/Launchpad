@@ -6,145 +6,196 @@
     <title>Launchpad</title>
     <link rel="stylesheet" href="main_style.css" type="text/css" />
     <link rel="stylesheet" href="small_screen.css" media="only screen and (max-width: 700px)" />
-    <link rel="stylesheet" href="font.css" />
+    <link rel="stylesheet" href="fonts.css" />
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="main_script.js" language="javascript" type="text/javascript"></script>
+    <!-- <script src="scripts/audio_constructor.js" defer="true" language="javascript" type="text/javascript">    
+    </script>
+    <script src="scripts/pad_obj.js" defer="true" language="javascript" type="text/javascript"></script> -->
+    <script src="scripts/main_script.js" defer="true" language="javascript" type="text/javascript"></script>
 </head>
 
 <body>
     <audio id="control_60" loop>
-        <source src="Resources/Sounds/WAV/Control_60.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Control_60.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Control_60.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Control_60.mp3" type="audio/mp3">
     </audio>
     <!-- ---MODERN RAP AUDIOS--- -->
     <audio id="modernRapDrum_1" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Main_Drum_1.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Main_Drum_1.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Drum_1.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Drum_1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapDrum_2" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Drum_2.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Drum_2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapDrum_3" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Drum_3.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Drum_3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapDrum_4" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Drum_4.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Drum_4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapDrum_5" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Drum_5.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Drum_5.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapXDrum_1" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Extra_Drum_1.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Extra_Drum_1.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Drum_1.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Drum_1.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapXDrum_2" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Drum_2.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Drum_2.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapXDrum_3" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Drum_3.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Drum_3.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapXDrum_4" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Drum_4.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Drum_4.mp3" type="audio/mp3">
+    </audio>
+    <audio id="modernRapXDrum_5" loop>
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Drum_5.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Drum_5.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapBass_1" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Bass_1.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Bass_1.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Bass_1.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Bass_1.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapMelodic_1" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Main_Melodic_1.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Main_Melodic_1.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Melodic_1.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Melodic_1.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapMelodic_2" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Main_Melodic_2.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Main_Melodic_2.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Melodic_2.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Melodic_2.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapMelodic_3" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Main_Melodic_3.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Main_Melodic_3.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Main_Melodic_3.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Main_Melodic_3.mp3" type="audio/mp3">
     </audio>
     <audio id="modernRapXMelodic_1" loop>
-        <source src="Resources/Sounds/WAV/Modern_Rap/Extra_Melodic_1.wav" type="audio/wav">
-        <source src="Resources/Sounds/MP3/Modern_Rap/Extra_Melodic_1.mp3" type="audio/mp3">
+        <source src="resources/Sounds/WAV/Modern_Rap/Extra_Melodic_1.wav" type="audio/wav">
+        <source src="resources/Sounds/MP3/Modern_Rap/Extra_Melodic_1.mp3" type="audio/mp3">
     </audio>
     <!-- ************* --
       -----STRUCTURE----- 
       -- ************* -->
-    <header class="header-cont">
-        <a class="s-menu-btn" onclick="prueba()" )><span id="sOpenConf" class="icon-menu"></span></a>
-        <h1 class="header__title">LAUNCHPAD</h1>
+    <header>
+        <a id="sOpenConf" class="s-menu-btn"><span class="icon-menu"></span></a>
+        <h1>LAUNCHPAD</h1>
     </header>
-    <div class="grid__container">
-        <aside id="confMenu" class="cont-configuration">
-            <ul class="conf__ul">
-                <li class="conf__bar">
-                    <h2 class="conf__title">Musical genre</h2>
-                </li class="conf__select-genre">
-                <li class="cont__music-genre">
-                    <a id="modernRapButton" class="music-genre" alt="Select Modern Rap"></a>
-                    <a class="music-genre" alt="Select Rap Rock"></a>
-                    <a class="music-genre" alt=""></a>
-                    <a class="music-genre" alt=""></a>
-                    <a class="music-genre" alt=""></a>
+    <div class="container">
+        <div id="panel" class="hiddenElement">
+        </div>
+        <nav id="confMenu" class="hiddenElement">
+            <ul>
+                <li><span>Musical genre</span></li>
+                <li class="genres">
+                    <a id="modernRapButton" alt="Select Modern Rap"></a>
+                    <a id="rapRockButton" alt="Select Rap Rock"></a>
+                    <a alt=""></a>
+                    <a alt=""></a>
+                    <a alt=""></a>
                 </li>
-                <li class="conf__bar">
-                    <h2 class="conf__title">Click up</h2>
+                <li>
+                    <span>Click up</span>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
                 </li>
-                <li class="conf__bar">
-                    <h2 class="conf__title">Cosa 2</h2>
+                <li>
+                    <span>Cosa 2</span>
                     <label class="switch">
                         <input type="checkbox">
                         <span class="slider"></span>
                     </label>
                 </li>
-                <li class="conf__bar">
-                    <h2 class="conf__title">Cosa 3</h2>
+                <li>
+                    <span>Cosa 3</span>
                 </li>
             </ul>
-        </aside>
-        <main class="cont-launchpad">
-            <div id="modernRapGrid" class="grid__launchpad">
+        </nav>
+        <main>
+            <div class="grid-launchpad">
                 <!-- ---ROW 0--- -->
-                <a class="grid__cell grid__info grid__row-0">
-                    <h3 class="info__title">Drum 1</h3>
+                <a class="grid-info grid-row-0">
+                    <span>Drum 1</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-0 grid__pad-row-0" id="column1_row0" onclick="playSample(modernRapDrum_1, event.target, 0)" alt="Main Drum 1, Press 1">
-                    <label class="pad__key">1</label>
+                <a class="grid-pad grid-row-0" id="column1_row0" name="pad" alt="Main Drum 1, Press 1">
+                    <span>1</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-0 grid__pad-row-0"></a>
-                <a class="grid__cell grid__pad grid__row-0 grid__pad-row-0"></a>
-                <a class="grid__cell grid__pad grid__row-0 grid__pad-row-0"></a>
-                <a class="grid__cell grid__pad grid__row-0 grid__pad-row-0"></a>
+                <a class="grid-pad grid-row-0" id="column2_row0" name="pad" alt="Main Drum 2, Press 2">
+                    <span>2</span>
+                </a>
+                <a class="grid-pad grid-row-0" id="column3_row0" name="pad" alt="Main Drum 3, Press 3">
+                    <span>3</span>
+                </a>
+                <a class="grid-pad grid-row-0" id="column4_row0" name="pad" alt="Main Drum 4, Press 4">
+                    <span>4</span>
+                </a>
+                <a class="grid-pad grid-row-0" id="column5_row0" name="pad" alt="Main Drum 5, Press 5">
+                    <span>5</span>
+                </a>
                 <!-- ---ROW 1--- -->
-                <a class="grid__cell grid__info grid__row-1">
-                    <h3 class="info__title">Drum 2</h3>
+                <a class="grid-info grid-row-1">
+                    <span>Drum 2</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-1 grid__pad-row-1" id="column1_row1" onclick="playSample(modernRapXDrum_1, event.target, 1)" alt="Extra Drum 1, Press Q">
-                    <label class="pad__key">Q</label>
+                <a class="grid-pad grid-row-1" id="column1_row1" name="pad" alt="Extra Drum 1, Press Q">
+                    <span>Q</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-1 grid__pad-row-1"></a>
-                <a class="grid__cell grid__pad grid__row-1 grid__pad-row-1"></a>
-                <a class="grid__cell grid__pad grid__row-1 grid__pad-row-1"></a>
-                <a class="grid__cell grid__pad grid__row-1 grid__pad-row-1"></a>
+                <a class="grid-pad grid-row-1" id="column2_row1" name="pad" alt="Extra Drum 2, Press W">
+                    <span>W</span>
+                </a>
+                <a class="grid-pad grid-row-1" id="column3_row1" name="pad" alt="Extra Drum 3, Press E">
+                    <span>E</span>
+                </a>
+                <a class="grid-pad grid-row-1" id="column4_row1" name="pad" alt="Extra Drum 4, Press R">
+                    <span>R</span>
+                </a>
+                <a class="grid-pad grid-row-1" id="column5_row1" name="pad" alt="Extra Drum 5, Press T">
+                    <span>T</span>
+                </a>
                 <!-- ---ROW 2--- -->
-                <a class="grid__cell grid__info grid__row-2">
-                    <h3 class="info__title">Bass</h3>
+                <a class="grid-info grid-row-2">
+                    <span>Bass</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-2 grid__pad-row-2" id="column1_row2" onclick="playSample(modernRapBass_1, event.target, 2)" alt="Bass 1, Press A">
-                    <label class="pad__key">A</label>
+                <a class="grid-pad grid-row-2" id="column1_row2" name="pad" alt="Bass 1, Press A">
+                    <span>A</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-2 grid__pad-row-2"></a>
-                <a class="grid__cell grid__pad grid__row-2 grid__pad-row-2"></a>
-                <a class="grid__cell grid__pad grid__row-2 grid__pad-row-2"></a>
-                <a class="grid__cell grid__pad grid__row-2 grid__pad-row-2"></a>
+                <a class="grid-pad grid-row-2"></a>
+                <a class="grid-pad grid-row-2"></a>
+                <a class="grid-pad grid-row-2"></a>
+                <a class="grid-pad grid-row-2"></a>
                 <!-- ---ROW 3--- -->
-                <a class="grid__cell grid__info grid__row-3">
-                    <h3 class="info__title">Melodic 1</h3>
+                <a class="grid-info grid-row-3">
+                    <span>Melodic 1</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-3 grid__pad-row-3" id="column1_row3" onclick="playSample(modernRapMelodic_1, event.target, 3)" alt="Main Melodic 1, Press 6">
-                    <label class="pad__key">6</label>
+                <a class="grid-pad grid-row-3" id="column1_row3" name="pad" alt="Main Melodic 1, Press 6">
+                    <span>6</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-3 grid__pad-row-3" id="column2_row3" onclick="playSample(modernRapMelodic_2, event.target, 3)" alt="Main Melodic 2, Press 7">
-                    <label class="pad__key">7</label>
+                <a class="grid-pad grid-row-3" id="column2_row3" name="pad" alt="Main Melodic 2, Press 7">
+                    <span>7</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-3 grid__pad-row-3" id="column3_row3" onclick="playSample(modernRapMelodic_3, event.target, 3)" alt="Main Melodic 3, Press 8">
-                    <label class="pad__key">8</label>
+                <a class="grid-pad grid-row-3" id="column3_row3" name="pad" alt="Main Melodic 3, Press 8">
+                    <span>8</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-3 grid__pad-row-3"></a>
-                <a class="grid__cell grid__pad grid__row-3 grid__pad-row-3"></a>
+                <a class="grid-pad grid-row-3"></a>
+                <a class="grid-pad grid-row-3"></a>
                 <!-- ---ROW 4--- -->
-                <a class="grid__cell grid__info grid__row-4">
-                    <h3 class="info__title">Melodic 2</h3>
+                <a class="grid-info grid-row-4">
+                    <span>Melodic 2</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-4 grid__pad-row-4" id="column1_row4" onclick="playSample(modernRapXMelodic_1, event.target, 4)" alt="Extra Melodic 1, Press Y">
-                    <label class="pad__key">Y</label>
+                <a class="grid-pad grid-row-4" id="column1_row4" name="pad" alt="Extra Melodic 1, Press Y">
+                    <span>Y</span>
                 </a>
-                <a class="grid__cell grid__pad grid__row-4 grid__pad-row-4"></a>
-                <a class="grid__cell grid__pad grid__row-4 grid__pad-row-4"></a>
-                <a class="grid__cell grid__pad grid__row-4 grid__pad-row-4"></a>
-                <a class="grid__cell grid__pad grid__row-4 grid__pad-row-4"></a>
+                <a class="grid-pad grid-row-4"></a>
+                <a class="grid-pad grid-row-4"></a>
+                <a class="grid-pad grid-row-4"></a>
+                <a class="grid-pad grid-row-4"></a>
             </div>
         </main>
     </div>
@@ -156,19 +207,6 @@
 </footer>-->
 <script type="text/javascript">
 document.getElementById("modernRapButton").onclick = function() {
-    selectGenre("modernRap", document.getElementById("modernRapGrid"),
-        document.getElementById("modernRapButton"));
+    selectGenre("modernRap", document.getElementById("modernRapButton"));
 }
-document.onkeydown = function(e) {
-    switch (e.keyCode) {
-        case 49:
-            document.getElementById("column1_row0", event.target, 0).click();
-            break;
-        case 81:
-            document.getElementById("column1_row1", event.target, 1).click();
-            break;
-    }
-};
-</script>
-
 </html>

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     --bg-main-color: #252525;
     --bg-secundary-color: #1A1A24;
     --element-color: #CCC;
@@ -10,50 +11,54 @@
     --pad-font-color: #000;
 }
 body {
+    font-family: sans-serif;
+    color: var(--main-font-color);
     background-color: var(--bg-main-color);
 }
-.header-cont{
+header{
+    padding: 10px;
     border-bottom: 3px solid var(--line-color);
 }
-.s-menu-btn{
+header .s-menu-btn{
     display: none;
-    color: var(--main-font-color);
 }
-.header__title{
-    margin-right: 20px;
+header h1{
+    margin-right: 10px;
     text-align: right;
-    color: var(--main-font-color);
+    font-size: 40px;
 }
-.grid__container{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    grid-template-rows: 1fr;
+.container{
+    display: flex;
+    justify-content: center;
 }
-.cont-configuration{
-    overflow: scrol;
-    width: 250px;
-    height: 100vh;
+.container nav{
+    width: 350px;
+    height: calc(100vh - 70px);
     margin: 0;
     border-right: 3px solid var(--line-color);
     background-color: var(--bg-secundary-color);
     z-index: 1000;
 }
-.conf__ul{
+.container nav ul{
     list-style: none;
     padding: 0;
-    font-family: sans-serif;
     font-size: 15px;
-    color: var(--main-font-color);
 }
-.cont__music-genre{
+.container nav ul li{
     display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 20px 0 25px;
+}
+.container nav ul .genres{
     flex-wrap: wrap;
     justify-content: space-around;
-    padding:  10px 20px 10px 20px;
-    border-top: 1px solid var(--line-color-sec);
+    padding: 10px 20px 10px 20px;
+    border-top: 1px solid var(--line-color);
     border-bottom: 1px solid var(--line-color);
 }
-.music-genre{
+.container nav ul .genres a{
     width: 60px;
     height: 60px;
     border-radius: 0.7em;
@@ -62,25 +67,22 @@ body {
     background-color: var(--element-color);
     transition: 0.15s;
 }
-.music-genre:hover{
+.container nav ul .genres a:hover{
     background-color: var(--line-color);
     transform: scale(1.03);
     cursor: pointer;
 }
-.conf__bar{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 20px 0 25px;
+.container nav ul .genres #modernRapButton{
+    background-color: var(--line-color-secundary);;
 }
-.conf__title{
-    font-size: 15px;
-}
+/**********************************
+-----SWITCH BUTTON CONSTRUCTOR-----
+***********************************/
 .switch {
     display: inline-block;
     position: relative;
     width: 45px;
     height: 21px;
-    margin-top: 13px;
 }
 /* Hide default HTML checkbox */
 .switch input {
@@ -91,12 +93,11 @@ body {
 .slider {
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
+    left: 0;
     border-radius: 34px;
     background-color: var(--element-color);
-    -webkit-transition: 0.3s;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -105,11 +106,10 @@ body {
     content: "";
     height: 14px;
     width: 14px;
-    left: 3px;
     bottom: 3.5px;
+    left: 3px;
     border-radius: 50%;
     background-color: #FFF;
-    -webkit-transition: 0.3s;
     transition: 0.3s;
 }
 input:checked + .slider {
@@ -119,65 +119,72 @@ input:focus + .slider {
     ox-shadow: 0 0 1px var(--line-color-secundary);
 }
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
-.cont-launchpad{
+/**********************************/
+.container main{
     display: flex;
-    animation-direction: row;
-    justify-content: space-around;
-    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
 }
-.grid__launchpad {
+.container main .grid-launchpad{
     display: grid;
     grid-template-columns: 120px 80px 80px 80px 80px 80px;
     grid-template-rows: 80px 80px 80px 80px 80px;
     justify-content: center;
     column-gap: 3px;
     row-gap: 5px;
+    width: 100%;
+    max-width: 535px;
+    height: 100%;
+    max-height: 420px;
 }
-.grid__cell{
-    padding: 0.5em;
+.container main .grid-launchpad a{
+    max-height: 80px;
+    padding: 7px;
 }
-.grid__pad{
+.container main .grid-launchpad .grid-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.2em;
+    max-width: 120px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--pad-font-color);
+}
+.container main .grid-launchpad .grid-pad{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     border-radius: 0.7em;
+    max-width: 80px;
     text-align: right;
-    line-height: 98px;
+    font-size: 10.5px;
+    color: var(--pad-font-color);
     transition: 0.15s;
 }
-.grid__pad:hover{
+.container main .grid-launchpad .grid-pad:hover{
     filter: brightness(1.15);
     transform: scale(1.03);
     cursor: pointer;
 }
-.pad__key{
-    font-family: sans-serif;
-    font-size: 0.65em;
-    color: var(--pad-font-color);
-}
-.grid__info{
-    text-align: center;
-    border-radius: 0.2em;
-}
-.info__title{
-    font-family: sans-serif;
-    font-size: 1em;
-    font-weight: bold;
-    color: var(pad-font-color);
-}
-.grid__row-0{
+.container main .grid-launchpad .grid-row-0{
     background-color: #E3A8E3;
 }
-.grid__row-1{
+.container main .grid-launchpad .grid-row-1{
     background-color: #FFFFC6;
 }
-.grid__row-2{
+.container main .grid-launchpad .grid-row-2{
     background-color: #FF97D0;
 }
-.grid__row-3{
+.container main .grid-launchpad .grid-row-3{
     background-color: #93C9FF;
 }
-.grid__row-4{
+.container main .grid-launchpad .grid-row-4{
     background-color: #93FFC9;
 }
