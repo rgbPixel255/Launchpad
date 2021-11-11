@@ -34,11 +34,9 @@ let onPlay = []; //Samples already playing
 let padOnPlay = []; //Cells that are playing
 let isHidden = 1; //For conf menu with small screen, 0 = Not hidden, 1 = Hidden
 
-function createPad(item, sound, color1, color2){
+function createPad(item, sound, playingColor, pausedColor){
     let cell = item;
     let audio = sound;
-    let playingColor = color1;
-    let pausedColor = color2;
     return {
         getCell: () => {
             return cell;
